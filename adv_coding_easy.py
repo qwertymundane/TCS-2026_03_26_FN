@@ -52,7 +52,19 @@ else:
 #                          --- provides various functions that work on iterators to produce complex iterators.
 # The itertools.combinations() function generates all possible unique combinations of a specified length from an iterable, 
 # where order does not matter and elements are treated as unique by their position.
-
+# How it works:
+# - itertools.combinations(iterable, r) returns an iterator producing r-length tuples from the input iterable.
+# - The output is in lexicographic order(dictionary order) based on the input order.
+# - If the iterable is sorted, the combinations will also be sorted.
+# Example – From String:
+# from itertools import combinations
+# word = "WXY"
+# for c in combinations(word, 2):
+#    print(''.join(c))
+# Output:
+# WX
+# WY
+# Y
 
 # $2 <---
 # all()
