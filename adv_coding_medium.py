@@ -42,10 +42,10 @@ def merge_sort(n:int,s:list):
                 mode=1
     return moves
 
-# Function to safely convert comma-separated string to list of integers
+# Function to safely convert space-separated string to list of integers
 def parse_int_list(input_str):
     try:
-        # Remove extra spaces, split by comma, and convert to integers
+        # Remove extra spaces, split by space, and convert to integers
         numbers = list(map(int, input_str.strip().split(' ')))
         return numbers
     except ValueError:
